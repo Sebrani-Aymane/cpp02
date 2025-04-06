@@ -6,7 +6,7 @@
 /*   By: asebrani <asebrani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 00:42:45 by asebrani          #+#    #+#             */
-/*   Updated: 2025/04/01 23:45:02 by asebrani         ###   ########.fr       */
+/*   Updated: 2025/04/06 01:42:52 by asebrani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class Fixed{
         static const int bits_holder= 8;
     public:
     Fixed();
-    Fixed(Fixed& Fixeed);
-    Fixed& operator=(Fixed& Fixxedd);
+    Fixed(const Fixed& Fixeed);
+    Fixed& operator=(const Fixed& Fixxedd);
     ~Fixed();
     int getRawBits(void) const;
     void setRawBits(int const raw);
